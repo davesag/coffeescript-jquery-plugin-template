@@ -23,11 +23,11 @@
   module "basic tests",
   
     setup: ->
-      this.elems = $("#qunit-fixture").children()
+      this.elems = $("#qunit-fixture").children(".qunit-container")
 
   # all jQuery plugins must be chainable.
   test "is chainable", ->
     expect(1)
-    strictEqual(this.elems.sidebarUI(), this.elems, "should be chainable")
+    strictEqual(this.elems.myPlugin(), this.elems, "should be chainable")
 
 ) jQuery

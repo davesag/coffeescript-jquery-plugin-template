@@ -9,20 +9,18 @@
   }
 
   (function($) {
-    $.fn.sidebarUI = function(options) {
+    $.fn.myPlugin = function(options) {
       var opts, self;
       self = this;
-      opts = $.extend(true, {}, $.fn.sidebarUI.options);
-      if (typeof options === "object") {
-        opts = $.extend(true, opts, options);
-      }
-      this.options = opts;
+      opts = $.extend(true, {}, $.fn.myPlugin.options);
+      this.options = typeof options === "object" ? $.extend(true, opts, options) : opts;
       return this.each(function() {
         var $this;
-        return $this = $(this);
+        $this = $(this);
+        return $this;
       });
     };
-    return $.fn.sidebarUI.options = {
+    return $.fn.myPlugin.options = {
       whatever: true
     };
   })(jQuery);
