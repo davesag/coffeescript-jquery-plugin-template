@@ -1,6 +1,6 @@
 throw "Expected jQuery to have been loaded before this script."  if typeof jQuery isnt "function"
 (($) ->
-  
+
   # Main jQuery Collection method.
   $.fn.myPlugin = (options) ->
     self = this
@@ -11,9 +11,9 @@ throw "Expected jQuery to have been loaded before this script."  if typeof jQuer
       opts
     @each ->
       $this = $(this)
-      
+  
       # TODO: do pluginy stuff with $this
-      
+  
       return $this # because it's chainable.
 
   # defaults
