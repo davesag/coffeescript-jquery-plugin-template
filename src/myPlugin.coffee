@@ -3,7 +3,6 @@ throw "Expected jQuery to have been loaded before this script."  if typeof jQuer
 
   # Main jQuery Collection method.
   $.fn.myPlugin = (options) ->
-    self = this
     opts = $.extend true, {}, $.fn.myPlugin.options
     @options = if typeof options is "object"
       $.extend(true, opts, options)
