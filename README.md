@@ -17,8 +17,6 @@ npm install
 grunt test
 ```
 
-Note that by default this will supress any console.log output.  To get that output as well you need to add the `--debug` flag, which also generates a lot of `phantomjs` noise.
-
 ### To Build
 
 ```bash
@@ -29,7 +27,7 @@ This will output the final distribution files into the `dist/` folder, prefixed 
 
 Files created are:
 
-* `jquery-myPlugin.1.0.0.js` - the 'developer' version.
-* `jquery-myPlugin.1.0.0.min.js` The minified version for production use.
-* `jquery-myPlugin.1.0.0.min.map` The `sourcemap` file for debugging using the minified version.
+* `jquery-myPlugin.1.0.0.js` — the 'developer' version.
+* `jquery-myPlugin.1.0.0.min.js` — The minified version for production use.
+* `jquery-myPlugin.1.0.0.min.js.map` — The `sourcemap` file for debugging using the minified version.
 

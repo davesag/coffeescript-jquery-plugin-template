@@ -4,10 +4,6 @@
  * Copyright (c) 2014 Dave Sag; Licensed MIT
  */
 (function() {
-  if (typeof jQuery !== "function") {
-    throw "Expected jQuery to have been loaded before this script.";
-  }
-
   (function($) {
     $.fn.myPlugin = function(options) {
       var opts;
